@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutas</title>
+</head>
+
+<body>
+    <h1>Numeros</h1>
+    <hr>
+    <ul>
+        {% for num in numeros %}
+        {% if num % 2 == 0 %}
+        <li>{{num}} es par</li> {% else %} <li>{{num}} es impar</li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar email</title>
+    <style>
+        /* Estilo para el cuerpo del documento HTML */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        /* Estilo para el formulario */
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Estilo para las etiquetas */
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para los campos de entrada de texto */
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para los campos de entrada de texto */
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para el botón de envío del formulario */
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #49ab4c;
+            color: #fff;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Enviar email</h1>
+    <hr>
+    <form action="/web/email" method="post">
+        <p>Enviar correo electrónico</p>
+        <label for="asunto">Asunto:</label>
+        <input type="text" name="asunto">
+        <label for="email">Email:</label>
+        <input type="text" name="email">
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" cols="30" rows="10"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>

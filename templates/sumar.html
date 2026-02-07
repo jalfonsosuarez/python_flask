@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumer dos números</title>
+    <style>
+        /* Estilo para el cuerpo del documento HTML */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        /* Estilo para el formulario */
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Estilo para las etiquetas */
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para los campos de entrada de texto */
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para el botón de envío del formulario */
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #49ab4c;
+            color: #fff;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sumar dos números</h1>
+    <hr>
+    <form action="/web/sumar" method="post">
+        <label for="n1">Número 1:</label>
+        <input type="text" name="n1">
+        <label for="n2">Número 2:</label>
+        <input type="text" name="n2">
+        <button type="submit">Calcular</button>
+        {% if suma is not none %}
+        <h4>La suma es {{ suma }}</h4>
+        {% endif %}
+    </form>
+</body>
+
+</html>
