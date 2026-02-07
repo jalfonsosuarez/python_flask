@@ -43,7 +43,7 @@
         -> Muestra el resultado de la suma en la parte inferior del formulario.
     GET localhost:5010/email 
         -> Muestra un formulario para enviar correo electrónico. Imprescindible tener las variables de entorno bien configuradas.
-    PORT localhost:5010/email (Se ejecuta al enviar el formulario) 
+    POST localhost:5010/email (Se ejecuta al enviar el formulario) 
         -> Muestra 'Correo enviado'  y envía el correo.
 
 
