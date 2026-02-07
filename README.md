@@ -4,7 +4,7 @@
 
 1. Establece las variables de entorno.
     - Renombra .env.template como .env
-    - Da valores para EMAIL_USER y EMAIL_TOKEN (el tocken lo obtienes de tu proveedor de correo electrónico.)
+    - Da valores para EMAIL_USER y EMAIL_TOKEN (el token lo obtienes de tu proveedor de correo electrónico.)
 
 2. Crea la imagen de Docker:
     ```
