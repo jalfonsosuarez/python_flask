@@ -31,7 +31,7 @@
     GET localhost:5010/web/contacto -> Muestra un formulario de datos de contacto.
     POST localhost:5010/web/contacto (Se ejecuta al enviar el formuilario) -> 'Mensaje enviado'.
     GET localhost:5010/web/sumar -> Muestra un formulario que pide dos números.
-    POST localhost:5010/web/sumas (Se ejecuta al enviar el formulario) -> Muestra el resultado de la suma en la parte inferior del formulario.
+    POST localhost:5010/web/sumar (Se ejecuta al enviar el formulario) -> Muestra el resultado de la suma en la parte inferior del formulario.
     GET localhost:5010/email -> Muestra un formulario para enviar correo electrónico. Imprescindible tener las variables de entorno bien configuradas.
     PORT localhost:5010/email (Se ejecuta al enviar el formulario) -> Muestra 'Correo enviado'  y envía el correo.
 
